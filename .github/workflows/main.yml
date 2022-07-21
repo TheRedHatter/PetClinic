@@ -41,12 +41,11 @@ env:
   product: Juiceshop
   subProduct: IoT APP
   environment: Staging
-  token: ${{secrets.ARMORCODE_TOKEN}}
+  token: ${11770924-d7a8-42ec-acf9-2cd00d2586cd}
   buildTool: GITHUB_ACTIONS
   buildNumber: ${{github.run_number}}
   end: 30
-  
-on:
+  on:
   # Triggers the workflow on push request events
   push:
   # Allows you to run this workflow manually from the Actions tab
