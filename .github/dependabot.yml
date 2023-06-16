@@ -18,7 +18,8 @@ updates:
     # Check for updates once a week
     schedule:
       interval: "daily"
-# Enable version updates for npm
+      
+ # Enable version updates for npm
   - package-ecosystem: "Log4j"
     # Look for `package.json` and `lock` files in the `root` directory
     directory: "/"
@@ -33,6 +34,7 @@ updates:
     # Check for updates once a week
     schedule:
       interval: "daily"
+      
   # Enable version updates for npm
   - package-ecosystem: "Log4j"
     # Look for `package.json` and `lock` files in the `root` directory
@@ -48,21 +50,24 @@ updates:
     # Check for updates once a week
     schedule:
       interval: "daily" 
-       # Enable version updates for Docker
+      
+   # Enable version updates for Docker
   - package-ecosystem: "Spring Framework"
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
     # Check for updates once a week
     schedule:
       interval: "daily"
+      
   # Enable version updates for Docker
   - package-ecosystem: "Apache HttpClient"
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
     # Check for updates once a week
     schedule:
-      interval: "daily" 
-       # Enable version updates for Docker
+      interval: "daily"
+      
+  # Enable version updates for Docker
   - package-ecosystem: "Guava"
     # Look for a `Dockerfile` in the `root` directory
     directory: "/"
