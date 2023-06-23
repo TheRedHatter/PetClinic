@@ -37,5 +37,18 @@ stage('Run Gitleaks') {
         sh './dependency-check/bin/dependency-check.sh --scan . --format XML --out dependency-check-report.xml' 
     }
 }
+        node {
+  stage('SCM') {
+    checkout scm
+  }
+  stage('SonarQube Analysis') {
+    def mvn = tool 'Default Maven';
+    withSonarQubeEnv() {
+      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=Petclinic -Dsonar.projectName='Petclinic'"
     }
+  }
+}
+    }
+}
+}
 }
