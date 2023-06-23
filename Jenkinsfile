@@ -18,24 +18,4 @@ stage('Run Gitleaks') {
         }
     }
   }
-stage('Checkout') {
-        // Check out your Git repository
-        steps {
-        git 'https://github.com/LearnWithAshish/vulnado.git'
     }
-    }
-    stage('Dependency Check') {
-        // Download the Dependency Check CLI
-        steps {
-        sh 'curl -LO https://github.com/jeremylong/DependencyCheck/releases/download/v8.2.1/dependency-check-8.2.1-release.zip'
-
-        // Unzip the Dependency Check CLI
-        sh 'rm -rf dependency-check || true'
-        sh 'unzip -qq dependency-check-8.2.1-release.zip'
-
-        // Run Dependency Check on the repository
-        sh './dependency-check/bin/dependency-check.sh --scan . --format XML --out dependency-check-report.xml' 
-    }
-}
-    }
-    
