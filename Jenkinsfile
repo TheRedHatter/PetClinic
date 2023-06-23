@@ -36,6 +36,6 @@ stage('Checkout') {
         // Run Dependency Check on the repository
         sh './dependency-check/bin/dependency-check.sh --scan . --format XML --out dependency-check-report.xml' 
     }
-
+}
     }
     
