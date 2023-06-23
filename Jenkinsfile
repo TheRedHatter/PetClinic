@@ -37,4 +37,5 @@ stage('Checkout') {
         sh './dependency-check/bin/dependency-check.sh --scan . --format XML --out dependency-check-report.xml' 
     }
 
-
+    }
+    
