@@ -1,0 +1,76 @@
+# Basic dependabot.yml file with
+# minimum configuration for two package managers
+
+version: 2
+updates:
+  # Enable version updates for npm
+  - package-ecosystem: "JUnit"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check the npm registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
+
+  # Enable version updates for Docker
+  - package-ecosystem: "Apache Commons"
+    # Look for a `Dockerfile` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
+      
+ # Enable version updates for npm
+  - package-ecosystem: "Log4j"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check the npm registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
+
+  # Enable version updates for Docker
+  - package-ecosystem: "Jackson"
+    # Look for a `Dockerfile` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
+      
+  # Enable version updates for npm
+  - package-ecosystem: "Log4j"
+    # Look for `package.json` and `lock` files in the `root` directory
+    directory: "/"
+    # Check the npm registry for updates every day (weekdays)
+    schedule:
+      interval: "daily"
+
+  # Enable version updates for Docker
+  - package-ecosystem: "Hibernate"
+    # Look for a `Dockerfile` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily" 
+      
+   # Enable version updates for Docker
+  - package-ecosystem: "Spring Framework"
+    # Look for a `Dockerfile` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
+      
+  # Enable version updates for Docker
+  - package-ecosystem: "Apache HttpClient"
+    # Look for a `Dockerfile` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
+      
+  # Enable version updates for Docker
+  - package-ecosystem: "Guava"
+    # Look for a `Dockerfile` in the `root` directory
+    directory: "/"
+    # Check for updates once a week
+    schedule:
+      interval: "daily"
